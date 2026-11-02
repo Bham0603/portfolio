@@ -1,0 +1,19 @@
+{
+  "name": "grishi-sachdeva-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Grishi Sachdeva — exact replica aesthetic of Wakeout.app with personalized AI & Full-Stack projects",
+  "scripts": {
+    "start": "npx -y serve . -l 3000",
+    "dev": "npx -y serve . -l 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "wakeout",
+    "neo-brutalism",
+    "ai",
+    "full-stack",
+    "grishi-sachdeva"
+  ],
+  "author": "Grishi Sachdeva",
+  "license": "MIT"
+}

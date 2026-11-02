@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>Grishi Sachdeva | AI Engineer & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Grishi Sachdeva — B.Tech Artificial Intelligence & Data Science student, Founder of GlowBerry (500+ orders), Chrome MV3 Extension builder, and Deep Learning researcher." />
+  <meta name="keywords" content="Grishi Sachdeva, AI Engineer, Full Stack Developer, Glowberry, Context Bridge, Audio Deepfake Detector, Chessio, PyTorch, React, Next.js, Chrome Extension" />
+  <meta name="author" content="Grishi Sachdeva" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Grishi Sachdeva | AI Engineer & Full-Stack Developer" />
+  <meta property="og:description" content="Explore projects in Deep Learning, Multi-AI Chrome Extensions, and E-Commerce. Founder of GlowBerry." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://grishisachdeva.github.io/" />
+
+  <!-- Google Fonts: Fredoka (Display) & Space Grotesk (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpeg" href="assets/avatar.jpg" />
+</head>
+<body>
+
+  <!-- Sticky Neo-Brutalist Navigation -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" id="nav-brand">
+        <img src="assets/avatar.jpg" alt="Grishi Sachdeva" class="brand-icon" />
+        <span>Grishi<span style="color: var(--color-lime-deep)">.dev</span></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#arsenal" class="nav-link">Arsenal</a>
+        <a href="#packs" class="nav-link">Packs</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#arcade" class="nav-link">Arcade</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="sound-toggle-btn" class="sound-toggle-btn" title="Toggle 8-bit Sound Effects">
+          🔔 Sound ON
+        </button>
+        <a href="https://github.com/grishisachdeva" target="_blank" rel="noopener noreferrer" class="btn-sticker btn-paper btn-sm" style="display: none; @media(min-width: 600px){display:inline-flex;}">
+          GitHub
+        </a>
+        <a href="#contact" class="btn-sticker btn-lime btn-sm" data-confetti-btn>
+          Connect ⚡
+        </a>
+        <button id="mobile-toggle" class="mobile-nav-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1: HERO (Wakeout Sunrise Glow Aesthetic) -->
+  <section class="hero-section" id="hero">
+    <!-- Floating SVGs matching Wakeout App graphics -->
+    
+    <!-- 16-point Spinning Starburst Top Left -->
+    <div class="animate-float" style="position: absolute; top: 120px; left: 5%; pointer-events: none; z-index: 2;">
+      <svg width="68" height="68" viewBox="0 0 100 100" class="animate-spin-slow">
+        <path d="M 50.00 4.00 L 58.42 29.67 L 82.53 17.47 L 70.33 41.58 L 96.00 50.00 L 70.33 58.42 L 82.53 82.53 L 58.42 70.33 L 50.00 96.00 L 41.58 70.33 L 17.47 82.53 L 29.67 58.42 L 4.00 50.00 L 29.67 41.58 L 17.47 17.47 L 41.58 29.67 Z" fill="#ffc629" stroke="#043629" stroke-width="3" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+
+    <!-- 5x5 Polka Dot Matrix Top Right -->
+    <div style="position: absolute; top: 170px; right: 6%; pointer-events: none; z-index: 2;" class="animate-float-delayed">
+      <svg width="105" height="84" viewBox="0 0 110 88">
+        <circle cx="11" cy="11" r="5.5" fill="#043629"></circle><circle cx="33" cy="11" r="5.5" fill="#043629"></circle><circle cx="55" cy="11" r="5.5" fill="#043629"></circle><circle cx="77" cy="11" r="5.5" fill="#043629"></circle><circle cx="99" cy="11" r="5.5" fill="#043629"></circle>
+        <circle cx="11" cy="33" r="5.5" fill="#043629"></circle><circle cx="33" cy="33" r="5.5" fill="#043629"></circle><circle cx="55" cy="33" r="5.5" fill="#043629"></circle><circle cx="77" cy="33" r="5.5" fill="#043629"></circle><circle cx="99" cy="33" r="5.5" fill="#043629"></circle>
+        <circle cx="11" cy="55" r="5.5" fill="#043629"></circle><circle cx="33" cy="55" r="5.5" fill="#043629"></circle><circle cx="55" cy="55" r="5.5" fill="#043629"></circle><circle cx="77" cy="55" r="5.5" fill="#043629"></circle><circle cx="99" cy="55" r="5.5" fill="#043629"></circle>
+        <circle cx="11" cy="77" r="5.5" fill="#043629"></circle><circle cx="33" cy="77" r="5.5" fill="#043629"></circle><circle cx="55" cy="77" r="5.5" fill="#043629"></circle><circle cx="77" cy="77" r="5.5" fill="#043629"></circle><circle cx="99" cy="77" r="5.5" fill="#043629"></circle>
+      </svg>
+    </div>
+
+    <!-- Wavy Doodle Left Center -->
+    <div style="position: absolute; top: 58%; left: 2%; transform: rotate(-10deg); pointer-events: none; z-index: 2;">
+      <svg width="150" height="45" viewBox="0 0 120 36" fill="none">
+        <path d="M2 18 Q 15 2 30 18 T 60 18 T 90 18 T 118 18" stroke="#ff6b3e" stroke-width="5" stroke-linecap="round" fill="none"></path>
+      </svg>
+    </div>
+
+    <!-- Zigzag Doodle Bottom Right -->
+    <div style="position: absolute; bottom: 35px; right: 4%; transform: rotate(8deg); pointer-events: none; z-index: 2;">
+      <svg width="150" height="42" viewBox="0 0 120 34" fill="none">
+        <path d="M3 28 L 18 6 L 33 28 L 48 6 L 63 28 L 78 6 L 93 28 L 108 6 L 117 20" stroke="#00b6d2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Text Column -->
+        <div>
+          <div class="hero-top-badge">
+            <span class="pill-badge" style="background-color: var(--color-yellow); color: var(--color-ink);">
+              <span style="font-size: 1rem;">🚀</span> B.TECH AI & DATA SCIENCE • GGSIPU '27
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Bring back the
+            <span class="highlight-pen">
+              <span class="pen-text">joy</span>
+              <span class="pen-stroke"></span>
+            </span>
+            of building.
+          </h1>
+
+          <p class="hero-lead">
+            Hi, I'm <strong>Grishi Sachdeva</strong>. Full-Stack Engineer &amp; AI Developer building intelligent multi-agent browser extensions, deepfake voice detectors, and e-commerce platforms that customers love.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-ctas">
+            <a href="#projects" class="btn-sticker btn-lime hero-primary-btn" data-confetti-btn>
+              <span class="btn-sticker-avatar">
+                <img src="assets/avatar.jpg" alt="Grishi Avatar" style="width: 100%; height: 100%; object-fit: cover;" />
+              </span>
+              Explore My Projects
+            </a>
+
+            <a href="https://github.com/grishisachdeva" target="_blank" rel="noopener noreferrer" class="btn-sticker btn-paper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub Profile
+            </a>
+
+            <button class="btn-sticker btn-cyan btn-sm" data-copy-email>
+              📋 Copy Email
+            </button>
+          </div>
+
+          <!-- Glowberry E-Commerce Banner matching Wakeout 97% Banner -->
+          <div class="study-banner">
+            <div>
+              <span class="study-banner-headline">🍓 500+ Orders Fulfilled</span>
+              <span class="study-banner-sub">as Founder &amp; Engineer at Glowberry Jewelry</span>
+            </div>
+            <a href="https://glow-berry-admin.vercel.app" target="_blank" rel="noopener noreferrer" class="study-link">
+              See Live Platform →
+            </a>
+          </div>
+
+          <!-- Laurel Wreath & Accreditations (Exact Wakeout Style) -->
+          <div class="accreditations-row">
+            <!-- Double Laurel Wreath Badge -->
+            <div class="laurel-wreath-badge">
+              <svg width="28" height="48" viewBox="0 0 36 60" aria-hidden="true" style="shrink: 0;">
+                <path d="M 26.27 54.78 L 24.41 54.09 L 22.61 53.25 L 20.88 52.28 L 19.23 51.17 L 17.68 49.94 L 16.23 48.58 L 14.89 47.12 L 13.67 45.55 L 12.58 43.89 L 11.62 42.15 L 10.81 40.34 L 10.14 38.47 L 9.62 36.55 L 9.26 34.60 L 9.05 32.62 L 9.00 30.64 L 9.11 28.66 L 9.37 26.69 L 9.79 24.75 L 10.37 22.85 L 11.09 21.00 L 11.95 19.21 L 12.96 17.50 L 14.10 15.87 L 15.36 14.34 L 16.74 12.91 L 18.23 11.60 L 19.82 10.41 L 21.50 9.35" fill="none" stroke="#043629" stroke-width="1.6" stroke-linecap="round"></path>
+                <ellipse cx="12" cy="50" rx="2.5" ry="5.5" fill="#e0ad12" stroke="#043629" stroke-width="1" transform="rotate(-250 12 50)"></ellipse>
+                <ellipse cx="7" cy="41" rx="2.4" ry="5.4" fill="#e0ad12" stroke="#043629" stroke-width="1" transform="rotate(-230 7 41)"></ellipse>
+                <ellipse cx="5" cy="31" rx="2.3" ry="5.1" fill="#e0ad12" stroke="#043629" stroke-width="1" transform="rotate(-210 5 31)"></ellipse>
+                <ellipse cx="7" cy="21" rx="2.1" ry="4.8" fill="#e0ad12" stroke="#043629" stroke-width="1" transform="rotate(-190 7 21)"></ellipse>
+                <ellipse cx="12" cy="13" rx="2.0" ry="4.5" fill="#e0ad12" stroke="#043629" stroke-width="1" transform="rotate(-170 12 13)"></ellipse>
+              </svg>
+              <span class="laurel-text">8.55 CGPA<br/><span style="font-size: 0.75rem; color: var(--color-ink-muted);">AI &amp; Data Science</span></span>
+              <svg width="28" height="48" viewBox="0 0 36 60" aria-hidden="true" style="transform: scaleX(-1);">
+                <path d="M 26.27 54.78 L 24.41 54.09 L 22.61 53.25 L 20.88 52.28 L 19.23 51.17 L 17.68 49.94 L 16.23 48.58 L 14.89 47.12 L 13.67 45.55 L 12.58 43.89 L 11.62 42.15 L 10.81 40.34 L 10.14 38.47 L 9.62 36.55 L 9.26 34.60 L 9.05 32.62 L 9.00 30.64 L 9.11 28.66 L 9.37 26.69 L 9.79 24.75 L 10.37 22.85 L 11.09 21.00 L 11.95 19.21 L 12.96 17.50 L 14.10 15.87 L 15.36 14.34 L 16.74 12.91 L 18.23 11.60 L 19.82 10.41 L 21.50 9.35" fill="none" stroke="#043629" stroke-width="1.6" stroke-linecap="round"></path>
+                <ellipse cx="12" cy="50" rx="2.5" ry="5.5" fill="#e0ad12" stroke="#043629" stroke-width="1" transform="rotate(-250 12 50)"></ellipse>
+                <ellipse cx="7" cy="41" rx="2.4" ry="5.4" fill="#e0ad12" stroke="#043629" stroke-width="1" transform="rotate(-230 7 41)"></ellipse>
+                <ellipse cx="5" cy="31" rx="2.3" ry="5.1" fill="#e0ad12" stroke="#043629" stroke-width="1" transform="rotate(-210 5 31)"></ellipse>
+                <ellipse cx="7" cy="21" rx="2.1" ry="4.8" fill="#e0ad12" stroke="#043629" stroke-width="1" transform="rotate(-190 7 21)"></ellipse>
+                <ellipse cx="12" cy="13" rx="2.0" ry="4.5" fill="#e0ad12" stroke="#043629" stroke-width="1" transform="rotate(-170 12 13)"></ellipse>
+              </svg>
+            </div>
+
+            <div class="stat-pill">
+              <svg width="22" height="22" viewBox="0 0 100 100">
+                <path d="M 50 4 L 58.4 29.7 L 82.5 17.5 L 70.3 41.6 L 96 50 L 70.3 58.4 L 82.5 82.5 L 58.4 70.3 L 50 96 L 41.6 70.3 L 17.5 82.5 L 29.7 58.4 L 4 50 L 29.7 41.6 L 17.5 17.5 L 41.6 29.7 Z" fill="#68be00" stroke="#043629" stroke-width="3"></path>
+              </svg>
+              <span>93% &amp; 83% Merit</span>
+            </div>
+
+            <div class="stat-pill">
+              <svg width="22" height="22" viewBox="0 0 100 100">
+                <path d="M 50 4 L 58.4 29.7 L 82.5 17.5 L 70.3 41.6 L 96 50 L 70.3 58.4 L 82.5 82.5 L 58.4 70.3 L 50 96 L 41.6 70.3 L 17.5 82.5 L 29.7 58.4 L 4 50 L 29.7 41.6 L 17.5 17.5 L 41.6 29.7 Z" fill="#ff6b3e" stroke="#043629" stroke-width="3"></path>
+              </svg>
+              <span>5 AI Models Interconnected</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Interactive Device Mockup Column -->
+        <div class="hero-device-wrapper">
+          <!-- Wobble Blob Background SVG -->
+          <div class="device-blob-backdrop">
+            <svg width="100%" height="100%" viewBox="0 0 140 140" class="animate-wobble">
+              <path d="M70 6 C 104 8 132 32 134 70 C 136 108 104 130 70 132 C 36 130 8 104 6 70 C 4 36 36 4 70 6 Z" fill="#ffc629" stroke="#043629" stroke-width="4"></path>
+            </svg>
+          </div>
+
+          <!-- Floating Stickers on Device -->
+          <div class="pill-badge device-sticker-tag-1">
+            YOU ARE THE BUILDER
+          </div>
+          <div class="pill-badge device-sticker-tag-2">
+            ZERO FLUFF • 100% CODE
+          </div>
+
+          <!-- Smartphone Shell -->
+          <div class="device-phone">
+            <!-- Dynamic Island / Notch -->
+            <div class="device-notch">
+              <div class="notch-camera"></div>
+              <div class="notch-sensor"></div>
+            </div>
+
+            <!-- Screen Viewport -->
+            <div class="device-screen">
+              <div class="phone-header-ui">
+                <span class="phone-time">09:41 AM</span>
+                <span class="phone-battery">
+                  <span>100%</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17 4h-3V2h-4v2H7v18h10V4z"/></svg>
+                </span>
+              </div>
+
+              <!-- Interactive Carousel Inside Phone Screen -->
+              <div class="phone-screen-content">
+                <div style="text-align: center;">
+                  <span class="pill-badge" id="phone-tag" style="background: var(--color-cyan); color: var(--color-ink); margin-bottom: 0.5rem;">
+                    CHROME MV3 EXTENSION
+                  </span>
+                  <h3 class="phone-project-title" id="phone-title">Context Bridge</h3>
+                  <p class="phone-project-desc" id="phone-desc">
+                    Interoperability across 5 AI platforms in 1-click.
+                  </p>
+                </div>
+
+                <!-- Simulated Live Widget -->
+                <div class="phone-project-preview">
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+                    <span style="font-size: 0.65rem; font-weight: 700; color: var(--color-yellow);">STATUS: LIVE</span>
+                    <span style="font-size: 0.65rem; color: #fff;">v2.4.0</span>
+                  </div>
+                  <div style="height: 48px; background: rgba(0,0,0,0.25); border-radius: 8px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                    <span style="font-size: 1.2rem;">🤖</span>
+                    <span style="font-size: 0.75rem; font-weight: 700; color: var(--color-paper);" id="phone-metric">
+                      5 AI Models • Synchronized
+                    </span>
+                  </div>
+                </div>
+
+                <div>
+                  <button class="phone-interactive-btn" id="phone-action-btn" data-project="context-bridge">
+                    View Extension Details
+                  </button>
+
+                  <div class="phone-screen-controls">
+                    <span class="phone-nav-dot active"></span>
+                    <span class="phone-nav-dot"></span>
+                    <span class="phone-nav-dot"></span>
+                    <span class="phone-nav-dot"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: DARK STAGE SECTION ("Projects You Can Actually Interact With") -->
+  <section class="stage-section" id="projects">
+    <!-- Floating Stage SVGs -->
+    <div style="position: absolute; top: 30px; right: 8%; transform: rotate(-12deg); pointer-events: none;">
+      <svg width="120" height="84" viewBox="0 0 130 91">
+        <path d="M4 87 L 4 40.95 A 61 40.95 0 0 1 126 40.95 L 126 87 Z" fill="#ffc629" stroke="#043629" stroke-width="4" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+    <div style="position: absolute; bottom: 30px; left: 6%; transform: rotate(6deg); pointer-events: none;">
+      <svg width="130" height="38" viewBox="0 0 120 34" fill="none">
+        <path d="M3 28 L 18 6 L 33 28 L 48 6 L 63 28 L 78 6 L 93 28 L 108 6 L 117 20" stroke="#68be00" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+      </svg>
+    </div>
+
+    <div class="container" style="text-align: center;">
+      <p class="section-eyebrow">SIX FLAGSHIP BUILDS</p>
+      <h2 class="section-title">Projects built for real humans &amp; real impact.</h2>
+      <p class="section-desc">
+        Click on any project to launch deep-dive architecture specs, run interactive live demos, or view open-source GitHub code.
+      </p>
+
+      <!-- Category Filter Pills -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Builds (6)</button>
+        <button class="filter-btn" data-filter="ai">AI &amp; Deep Learning</button>
+        <button class="filter-btn" data-filter="web">Full-Stack Web</button>
+        <button class="filter-btn" data-filter="extension">Chrome MV3</button>
+        <button class="filter-btn" data-filter="startup">Startup &amp; E-Commerce</button>
+      </div>
+
+      <!-- Projects Showcase Grid -->
+      <div class="projects-showcase-grid">
+
+        <!-- Project 1: Context Bridge -->
+        <div class="project-card" data-category="ai extension">
+          <div class="project-img-box">
+            <span class="pill-badge project-pill-tag" style="background: var(--color-cyan); color: var(--color-ink);">
+              Multi-AI Routing
+            </span>
+            <img src="assets/context_bridge.jpg" alt="Context Bridge" />
+          </div>
+          <h3 class="project-card-title">Context Bridge</h3>
+          <p class="project-card-desc">
+            Chrome MV3 extension enabling real-time interoperability across 5 AI platforms (ChatGPT, Claude, Gemini, Perplexity, DeepSeek). Instant cross-model critiques.
+          </p>
+          <div class="project-tech-pills">
+            <span class="tech-pill">Chrome MV3</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">DOM APIs</span>
+            <span class="tech-pill">Service Workers</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn-sticker btn-cyan btn-sm" data-open-modal="context-bridge">
+              Inspect Architecture
+            </button>
+            <a href="https://github.com/grishisachdeva/context-bridge" target="_blank" rel="noopener noreferrer" class="btn-sticker btn-paper btn-sm">
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: GlowBerry E-Commerce -->
+        <div class="project-card" data-category="web startup">
+          <div class="project-img-box">
+            <span class="pill-badge project-pill-tag" style="background: var(--color-yellow); color: var(--color-ink);">
+              500+ Customers
+            </span>
+            <img src="assets/glowberry.jpg" alt="Glowberry E-Commerce" />
+          </div>
+          <h3 class="project-card-title">GlowBerry Platform &amp; Admin</h3>
+          <p class="project-card-desc">
+            Founder &amp; Engineer for India's cutest gifting &amp; jewelry boutique. Soft-minimalist responsive storefront, Next.js admin, SVG micro-animations, and Supabase backend.
+          </p>
+          <div class="project-tech-pills">
+            <span class="tech-pill">Next.js</span>
+            <span class="tech-pill">Supabase</span>
+            <span class="tech-pill">Tailwind CSS</span>
+            <span class="tech-pill">Figma UI/UX</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn-sticker btn-yellow btn-sm" data-open-modal="glowberry">
+              Case Study
+            </button>
+            <a href="https://glow-berry-admin.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-sticker btn-lime btn-sm">
+              Live Demo ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Audio Deepfake & Synthetic Voice Detector -->
+        <div class="project-card" data-category="ai">
+          <div class="project-img-box">
+            <span class="pill-badge project-pill-tag" style="background: var(--color-ember); color: #fff;">
+              Cybersecurity AI
+            </span>
+            <img src="assets/deepfake_detector.jpg" alt="Deepfake Audio Detector" />
+          </div>
+          <h3 class="project-card-title">Audio Deepfake Detector</h3>
+          <p class="project-card-desc">
+            Deep-learning classifier identifying BONAFIDE vs SPOOF speech via Log-Mel spectrograms, CNN architecture, and Grad-CAM explainability on ASVspoof 2021 DF dataset.
+          </p>
+          <div class="project-tech-pills">
+            <span class="tech-pill">PyTorch</span>
+            <span class="tech-pill">Librosa</span>
+            <span class="tech-pill">Grad-CAM</span>
+            <span class="tech-pill">Streamlit</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn-sticker btn-ember btn-sm" data-open-modal="voice-detector">
+              ML Specs
+            </button>
+            <a href="https://github.com/grishisachdeva/synthetic-voice-detector" target="_blank" rel="noopener noreferrer" class="btn-sticker btn-paper btn-sm">
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Chessio & Chessio Web -->
+        <div class="project-card" data-category="extension web">
+          <div class="project-img-box">
+            <span class="pill-badge project-pill-tag" style="background: var(--color-purple); color: #fff;">
+              WASM Engine
+            </span>
+            <img src="assets/chessio.jpg" alt="Chessio Assistant" />
+          </div>
+          <h3 class="project-card-title">Chessio: Live Stockfish</h3>
+          <p class="project-card-desc">
+            Real-time Stockfish WASM chess assistant overlaid directly on Chess.com &amp; Lichess. Scrapes board state, paints eval bar, mini-board, and best move vector arrows.
+          </p>
+          <div class="project-tech-pills">
+            <span class="tech-pill">Stockfish WASM</span>
+            <span class="tech-pill">Chrome MV3</span>
+            <span class="tech-pill">Next.js</span>
+            <span class="tech-pill">Vercel</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn-sticker btn-purple btn-sm" data-open-modal="chessio">
+              Extension Info
+            </button>
+            <a href="https://chessio-beige.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-sticker btn-lime btn-sm">
+              Live Web App ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5: CyberFrat Web Applications -->
+        <div class="project-card" data-category="web">
+          <div class="project-img-box" style="background: linear-gradient(135deg, #043629, #0f614a); display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            <span class="pill-badge project-pill-tag" style="background: var(--color-lime); color: var(--color-ink);">
+              Internship
+            </span>
+            <span style="font-size: 3.5rem;">⚡</span>
+            <span style="font-family: var(--font-display); font-size: 1.15rem; color: #fff; font-weight: 700;">CyberFrat Frontend</span>
+          </div>
+          <h3 class="project-card-title">CyberFrat Web Platform</h3>
+          <p class="project-card-desc">
+            Responsive enterprise web apps built during summer internship. Collaborated with core engineering team to optimize load times, user flow, and cross-browser rendering.
+          </p>
+          <div class="project-tech-pills">
+            <span class="tech-pill">React.js</span>
+            <span class="tech-pill">HTML5/CSS3</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">Performance</span>
+          </div>
+          <div class="project-actions">
+            <button class="btn-sticker btn-lime btn-sm" data-open-modal="cyberfrat">
+              Internship Work
+            </button>
+            <a href="https://www.linkedin.com/in/grishisachdeva/" target="_blank" rel="noopener noreferrer" class="btn-sticker btn-paper btn-sm">
+              LinkedIn ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 6: GlowBerry Admin Portal -->
+        <div class="project-card" data-category="web startup">
+          <div class="project-img-box" style="background: linear-gradient(135deg, #fce4ec, #f8bbd0); display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            <span class="pill-badge project-pill-tag" style="background: var(--color-pink); color: var(--color-ink);">
+              E-Commerce CRM
+            </span>
+            <span style="font-size: 3.5rem;">📊</span>
+            <span style="font-family: var(--font-display); font-size: 1.15rem; color: var(--color-ink); font-weight: 700;">Admin Dashboard</span>
+          </div>
+          <h3 class="project-card-title">GlowBerry Admin Dashboard</h3>
+          <p class="project-card-desc">
+            Custom back-office operations suite powering order tracking, customer SMS alerts, inventory counts, and luxury hamper bundle configurations for 500+ happy buyers.
+          </p>
+          <div class="project-tech-pills">
+            <span class="tech-pill">Next.js 14</span>
+            <span class="tech-pill">Supabase Auth</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">Vercel</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://glow-berry-admin.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-sticker btn-pink btn-sm">
+              Open Admin App ↗
+            </a>
+            <a href="https://github.com/grishisachdeva/GlowBerry-Admin" target="_blank" rel="noopener noreferrer" class="btn-sticker btn-paper btn-sm">
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: TECH ARSENAL ("One button. One challenge. One ring to fill.") -->
+  <section class="arsenal-section" id="arsenal">
+    <div class="container" style="text-align: center;">
+      <p class="section-eyebrow" style="color: var(--color-lime-deep)">ENGINEERING CAPABILITIES</p>
+      <h2 class="section-title">One tech stack. Endless possibilities.</h2>
+      <p class="section-desc" style="color: var(--color-ink-muted);">
+        From low-level browser DOM hooks and WASM binaries to deep neural networks and pixel-perfect high-converting web apps.
+      </p>
+
+      <div class="arsenal-grid">
+        <!-- Pillar 1: AI & Deep Learning -->
+        <div class="arsenal-card card-lime">
+          <div class="arsenal-icon-circle" style="background: var(--color-lime); color: var(--color-ink);">
+            🧠
+          </div>
+          <h3 class="arsenal-heading">AI &amp; Deep Learning</h3>
+          <p class="arsenal-lead">
+            Designing robust convolutional networks, audio spectrogram extractors, and generative LLM pipelines with explainability built in.
+          </p>
+          <div class="skill-tag-cloud">
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Keras</span>
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">XGBoost</span>
+            <span class="skill-tag">Librosa</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Streamlit</span>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Modern Full-Stack Web -->
+        <div class="arsenal-card card-cyan">
+          <div class="arsenal-icon-circle" style="background: var(--color-cyan); color: var(--color-ink);">
+            💻
+          </div>
+          <h3 class="arsenal-heading">Full-Stack Web</h3>
+          <p class="arsenal-lead">
+            Crafting fluid, high-octane client interfaces and resilient backend servers with high-contrast typography and micro-interactions.
+          </p>
+          <div class="skill-tag-cloud">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">Redux</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Framer Motion</span>
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">HTML5 / CSS3</span>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Browser MV3 & Systems -->
+        <div class="arsenal-card card-ember">
+          <div class="arsenal-icon-circle" style="background: var(--color-ember); color: #fff;">
+            ⚡
+          </div>
+          <h3 class="arsenal-heading">Browser &amp; Systems</h3>
+          <p class="arsenal-lead">
+            Building background service workers, WebAssembly execution layers, relational databases, and automated DOM scraping systems.
+          </p>
+          <div class="skill-tag-cloud">
+            <span class="skill-tag">Chrome MV3</span>
+            <span class="skill-tag">Stockfish WASM</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C Language</span>
+            <span class="skill-tag">BASH / Linux</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: THE PACKS ("The packs people reach for first") -->
+  <section class="packs-section" id="packs">
+    <div class="container">
+      <div style="text-align: center;">
+        <p class="section-eyebrow" style="color: var(--color-ember)">SPECIALIZED WORKFLOWS</p>
+        <h2 class="section-title">The packs teams reach for first.</h2>
+        <p class="section-desc" style="color: var(--color-ink-muted);">
+          Turnkey engineering competencies ready to plug directly into your production codebase or high-growth startup.
+        </p>
+      </div>
+
+      <div class="packs-grid">
+        <!-- Pack 1 -->
+        <div class="pack-card">
+          <div class="pack-card-header">
+            <div class="pack-icon-pill" style="background: var(--color-cyan);">🤖</div>
+            <span class="pack-badge" style="background: var(--color-cyan);">Multi-AI</span>
+          </div>
+          <h3 class="pack-title">Cross-Model Orchestration</h3>
+          <p class="pack-desc">
+            Sync context across Claude, ChatGPT, Gemini, and DeepSeek. Inject prompts, scrape responses, and orchestrate automated AI consensus.
+          </p>
+          <div class="pack-footer">
+            <span>Proof of work: Context Bridge</span>
+            <span style="color: var(--color-lime-deep)">MV3 Ready</span>
+          </div>
+        </div>
+
+        <!-- Pack 2 -->
+        <div class="pack-card">
+          <div class="pack-card-header">
+            <div class="pack-icon-pill" style="background: var(--color-yellow);">🍓</div>
+            <span class="pack-badge" style="background: var(--color-yellow);">E-Commerce</span>
+          </div>
+          <h3 class="pack-title">Soft-Minimalist Storefronts</h3>
+          <p class="pack-desc">
+            Luxury product positioning, optimized image grids, custom SVG micro-animations, and frictionless checkout flows that drive repeat orders.
+          </p>
+          <div class="pack-footer">
+            <span>500+ orders fulfilled</span>
+            <span style="color: var(--color-lime-deep)">High Conversion</span>
+          </div>
+        </div>
+
+        <!-- Pack 3 -->
+        <div class="pack-card">
+          <div class="pack-card-header">
+            <div class="pack-icon-pill" style="background: var(--color-ember); color: #fff;">🛡️</div>
+            <span class="pack-badge" style="background: var(--color-ember); color: #fff;">Cybersecurity</span>
+          </div>
+          <h3 class="pack-title">Synthetic Audio Forensics</h3>
+          <p class="pack-desc">
+            Log-Mel spectrogram generation, CNN-based spoof classification, and Grad-CAM explainability heatmaps for defending against voice cloning.
+          </p>
+          <div class="pack-footer">
+            <span>ASVspoof 2021 DF tested</span>
+            <span style="color: var(--color-lime-deep)">Real-time Streamlit</span>
+          </div>
+        </div>
+
+        <!-- Pack 4 -->
+        <div class="pack-card">
+          <div class="pack-card-header">
+            <div class="pack-icon-pill" style="background: var(--color-purple); color: #fff;">♟️</div>
+            <span class="pack-badge" style="background: var(--color-purple); color: #fff;">WebAssembly</span>
+          </div>
+          <h3 class="pack-title">In-Browser WASM Engines</h3>
+          <p class="pack-desc">
+            Bundle C/C++ compiled binaries into the browser. Scrape dynamic live DOMs with zero lag and paint real-time mathematical vector overlays.
+          </p>
+          <div class="pack-footer">
+            <span>Stockfish 16 WASM</span>
+            <span style="color: var(--color-lime-deep)">Zero Backend Cost</span>
+          </div>
+        </div>
+
+        <!-- Pack 5 -->
+        <div class="pack-card">
+          <div class="pack-card-header">
+            <div class="pack-icon-pill" style="background: var(--color-lime);">⚡</div>
+            <span class="pack-badge" style="background: var(--color-lime);">Frontend</span>
+          </div>
+          <h3 class="pack-title">Neo-Brutalist High-Impact UI</h3>
+          <p class="pack-desc">
+            Crisp 3px borders, chunky sticker drop shadows, tactile button physics, Google font pairings, and responsive mobile-first layouts.
+          </p>
+          <div class="pack-footer">
+            <span>Wakeout-Grade Aesthetics</span>
+            <span style="color: var(--color-lime-deep)">Zero Placeholders</span>
+          </div>
+        </div>
+
+        <!-- Pack 6 -->
+        <div class="pack-card">
+          <div class="pack-card-header">
+            <div class="pack-icon-pill" style="background: var(--color-pink);">📈</div>
+            <span class="pack-badge" style="background: var(--color-pink);">Analytics</span>
+          </div>
+          <h3 class="pack-title">End-to-End Brand Growth</h3>
+          <p class="pack-desc">
+            From wireframing in Figma to shipping Supabase databases, running Instagram social funnels, and managing physical inventory operations.
+          </p>
+          <div class="pack-footer">
+            <span>Zero-dollar ad spend model</span>
+            <span style="color: var(--color-lime-deep)">Organic Scale</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: EXPERIENCE & EDUCATION ("Same Wakeout, wherever you sit") -->
+  <section class="timeline-section" id="experience">
+    <div class="container">
+      <div style="text-align: center;">
+        <p class="section-eyebrow" style="color: var(--color-lime-deep)">TRAJECTORY &amp; BACKGROUND</p>
+        <h2 class="section-title">Experience &amp; Academic Honors</h2>
+        <p class="section-desc" style="color: var(--color-ink-muted);">
+          Proven track record in software engineering, startup leadership, and top-tier academic rigor.
+        </p>
+      </div>
+
+      <div class="timeline-cards-wrap">
+
+        <!-- Card 1: CyberFrat -->
+        <div class="timeline-card">
+          <div class="timeline-meta">
+            <span class="timeline-period">SUMMER INTERN</span>
+            <h3 class="timeline-entity">CyberFrat</h3>
+            <span class="pill-badge timeline-role-pill" style="background: var(--color-lime); color: var(--color-ink);">
+              Web Development Intern
+            </span>
+            <span style="font-size: 0.85rem; color: var(--color-ink-muted); margin-top: 0.5rem;">
+              HTML5 • CSS3 • React • JS
+            </span>
+          </div>
+          <div class="timeline-body">
+            <ul class="timeline-bullets">
+              <li>Developed and maintained responsive web applications using React.js and modern JavaScript.</li>
+              <li>Collaborated directly with engineering mentors to optimize web performance, improving overall user experience and page load times.</li>
+              <li>Assisted in troubleshooting, code review, bug triage, and implementing new features based on project specifications.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2: GlowBerry Founder -->
+        <div class="timeline-card">
+          <div class="timeline-meta">
+            <span class="timeline-period">FOUNDER &amp; LEAD ENGINEER</span>
+            <h3 class="timeline-entity">Glowberry</h3>
+            <span class="pill-badge timeline-role-pill" style="background: var(--color-yellow); color: var(--color-ink);">
+              Founder / Tech Lead
+            </span>
+            <span style="font-size: 0.85rem; color: var(--color-ink-muted); margin-top: 0.5rem;">
+              500+ Happy Customers • E-Commerce
+            </span>
+          </div>
+          <div class="timeline-body">
+            <ul class="timeline-bullets">
+              <li><strong>End-to-End E-Commerce Leadership:</strong> Designed and engineered the official GlowBerry website and Instagram storefront, cultivating a premium brand identity that has fulfilled 500+ customer orders across India.</li>
+              <li><strong>High-Performance UI/UX:</strong> Implemented modern design principles including custom SVG micro-animations, optimized product grids, and high-contrast typography pairings.</li>
+              <li><strong>Strategic Brand Management:</strong> Direct all digital marketing, inventory logistics, and luxury product positioning, leveraging technical web analytics to drive consistent organic business growth.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 3: Education - GGSIPU -->
+        <div class="timeline-card" id="education">
+          <div class="timeline-meta">
+            <span class="timeline-period">SEP 2023 – SEP 2027</span>
+            <h3 class="timeline-entity">GGSIPU (ADGIPS)</h3>
+            <span class="pill-badge timeline-role-pill" style="background: var(--color-cyan); color: var(--color-ink);">
+              B.Tech AI &amp; Data Science
+            </span>
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-lime-deep); margin-top: 0.5rem;">
+              ★ CGPA: 8.55 / 10.0
+            </span>
+          </div>
+          <div class="timeline-body">
+            <ul class="timeline-bullets">
+              <li>Pursuing specialized degree in <strong>Artificial Intelligence and Data Science</strong> at Dr. Akhilesh Das Gupta Institute of Professional Studies (ADGIPS), Guru Gobind Singh Indraprastha University.</li>
+              <li>Core Coursework: Deep Learning, Neural Networks, Data Structures &amp; Algorithms, Operating Systems, Database Management Systems, Machine Learning, Computer Vision.</li>
+              <li>Active researcher and builder in audio deepfake detection, WASM browser extensions, and agentic LLM orchestration.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 4: High School - Holy Child -->
+        <div class="timeline-card">
+          <div class="timeline-meta">
+            <span class="timeline-period">HIGH SCHOOL</span>
+            <h3 class="timeline-entity">Holy Child Sr. Sec.</h3>
+            <span class="pill-badge timeline-role-pill" style="background: var(--color-pink); color: var(--color-ink);">
+              Class X &amp; Class XII
+            </span>
+            <span style="font-size: 0.85rem; color: var(--color-ink-muted); margin-top: 0.5rem;">
+              CBSE Board Excellence
+            </span>
+          </div>
+          <div class="timeline-body">
+            <ul class="timeline-bullets">
+              <li><strong>Class XII (2023):</strong> Graduated with <strong>83%</strong> with rigorous focus on Physics, Chemistry, and Mathematics.</li>
+              <li><strong>Class X (2021):</strong> Graduated with <strong>93%</strong> distinction in Science and Mathematics.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: AWARDS & STATS ("Apple gave the wiggle app an award") -->
+  <section class="award-feature-section">
+    <div class="container">
+      <div class="award-box">
+        <div class="award-trophy-icon">🏆</div>
+        <p class="section-eyebrow" style="color: var(--color-yellow);">ACADEMIC EXCELLENCE &amp; ENTREPRENEURSHIP</p>
+        <h2 class="award-box-title">Built with Passion. Proven by Results.</h2>
+        <p class="award-box-desc">
+          Maintaining an 8.55 CGPA in Artificial Intelligence &amp; Data Science while scaling a commercial e-commerce business to 500+ customers and engineering bleeding-edge AI Chrome extensions.
+        </p>
+
+        <div class="award-metrics-row">
+          <div class="award-stat-item">
+            <span class="award-stat-num">8.55</span>
+            <span class="award-stat-lbl">Undergrad CGPA</span>
+          </div>
+          <div class="award-stat-item">
+            <span class="award-stat-num">500+</span>
+            <span class="award-stat-lbl">Customers Served</span>
+          </div>
+          <div class="award-stat-item">
+            <span class="award-stat-num">5+</span>
+            <span class="award-stat-lbl">AI Models Bridged</span>
+          </div>
+          <div class="award-stat-item">
+            <span class="award-stat-num">93%</span>
+            <span class="award-stat-lbl">High School Honors</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: TESTIMONIALS ("Real humans. Real wiggling.") -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div style="text-align: center;">
+        <p class="section-eyebrow" style="color: var(--color-lime-deep)">COLLABORATOR &amp; USER FEEDBACK</p>
+        <h2 class="section-title">Real humans. Real code.</h2>
+        <p class="section-desc" style="color: var(--color-ink-muted);">
+          What team members, clients, and fellow engineers say about working with Grishi.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">
+            "Grishi's execution on GlowBerry was breathtaking. She single-handedly created the aesthetic, engineered the website, and managed orders flawlessly for hundreds of buyers. Rare blend of design taste and technical grit."
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background: var(--color-pink);">R</div>
+            <div>
+              <p class="testi-name">Riya M.</p>
+              <p class="testi-role">E-Commerce Collaborator</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">
+            "Context Bridge is genuinely one of the most useful Chrome extensions I've tested. Comparing Claude vs ChatGPT outputs without 10 open tabs saved hours of developer prompting. Brilliant architecture!"
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background: var(--color-cyan);">A</div>
+            <div>
+              <p class="testi-name">Aarav K.</p>
+              <p class="testi-role">Full-Stack Developer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">
+            "Consistently top of her cohort at GGSIPU. Her deepfake audio detection pipeline on the ASVspoof dataset showed deep comprehension of signal processing and CNN interpretability beyond regular coursework."
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background: var(--color-yellow);">S</div>
+            <div>
+              <p class="testi-name">Dr. Sharma</p>
+              <p class="testi-role">Academic Mentor &amp; Faculty</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: INTERACTIVE ARCADE / WIGGLE PLAYGROUND ("A whole arcade in your pocket") -->
+  <section class="arcade-section" id="arcade">
+    <div class="container">
+      <div class="arcade-box">
+        <p class="section-eyebrow" style="color: var(--color-yellow);">RETRO SOUNDBOARD &amp; EASTER EGGS</p>
+        <h2 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.75rem;">Interactive Arcade</h2>
+        <p style="color: rgba(255, 248, 230, 0.85); font-size: 1rem; max-width: 500px; margin: 0 auto 1.5rem;">
+          Just like Wakeout makes you move, click these buttons to test our Web Audio synthesizer or toggle global wiggle physics!
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 1.5rem;">
+          <button class="btn-sticker btn-yellow btn-sm" id="wiggle-toggle-btn">
+            Turn on Wiggle Mode
+          </button>
+        </div>
+
+        <!-- 4 Arcade Keys -->
+        <div class="arcade-board">
+          <button class="arcade-key-btn" data-sound="pop">
+            <span style="font-size: 1.8rem;">🫧</span>
+            <span>Pop (420Hz)</span>
+          </button>
+          <button class="arcade-key-btn" data-sound="coin">
+            <span style="font-size: 1.8rem;">🪙</span>
+            <span>Coin (8-bit)</span>
+          </button>
+          <button class="arcade-key-btn" data-sound="laser">
+            <span style="font-size: 1.8rem;">⚡</span>
+            <span>Laser Zap</span>
+          </button>
+          <button class="arcade-key-btn" data-sound="success">
+            <span style="font-size: 1.8rem;">🎉</span>
+            <span>Confetti Fanfare</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: CALL TO ACTION ("Ready to move?") -->
+  <section class="cta-section" id="contact">
+    <div class="container cta-box">
+      <div class="pill-badge" style="background: var(--color-lime); color: var(--color-ink); margin-bottom: 1.25rem; transform: rotate(-2deg);">
+        OPEN FOR ROLES &amp; OPPORTUNITIES
+      </div>
+
+      <h2 class="cta-title">
+        Ready to build something
+        <span class="highlight-pen lime">
+          <span class="pen-text">unforgettable</span>
+          <span class="pen-stroke"></span>
+        </span>?
+      </h2>
+
+      <p class="cta-desc">
+        Whether you have an ambitious AI project, a high-growth product team, or an engineering role, let's talk.
+      </p>
+
+      <div class="cta-actions">
+        <a href="mailto:grishisachdeva@gmail.com" class="btn-sticker btn-lime btn-lg" data-confetti-btn>
+          <span style="font-size: 1.5rem;">✉️</span> Say Hello via Email
+        </a>
+
+        <a href="https://www.linkedin.com/in/grishisachdeva/" target="_blank" rel="noopener noreferrer" class="btn-sticker btn-paper btn-lg">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          Connect on LinkedIn
+        </a>
+      </div>
+
+      <!-- Quick Copy Direct Contact Pills -->
+      <div class="direct-contacts-row">
+        <div class="contact-pill-item" data-copy-email title="Click to copy email">
+          <span>📧</span>
+          <span>grishisachdeva@gmail.com</span>
+          <span style="font-size: 0.75rem; color: var(--color-ink-muted);">[copy]</span>
+        </div>
+
+        <div class="contact-pill-item" data-copy-phone title="Click to copy phone">
+          <span>📞</span>
+          <span>+91 8826527495</span>
+          <span style="font-size: 0.75rem; color: var(--color-ink-muted);">[copy]</span>
+        </div>
+
+        <a href="https://github.com/grishisachdeva" target="_blank" rel="noopener noreferrer" class="contact-pill-item">
+          <span>🐙</span>
+          <span>github.com/grishisachdeva</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="brand-logo" style="color: var(--color-paper); margin-bottom: 0.75rem;">
+            <img src="assets/avatar.jpg" alt="Grishi" class="brand-icon" />
+            <span>Grishi<span style="color: var(--color-yellow)">.dev</span></span>
+          </div>
+          <p class="footer-brand-tagline">
+            B.Tech in Artificial Intelligence &amp; Data Science at GGSIPU. Founder of GlowBerry. Building intelligent, joyful software.
+          </p>
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>AVAILABLE FOR OPPORTUNITIES</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#projects">All Projects</a></li>
+            <li class="footer-link-item"><a href="#arsenal">Technical Arsenal</a></li>
+            <li class="footer-link-item"><a href="#packs">Skill Packs</a></li>
+            <li class="footer-link-item"><a href="#experience">Career &amp; Education</a></li>
+            <li class="footer-link-item"><a href="#arcade">Arcade Soundboard</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Key Projects</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="https://github.com/grishisachdeva/context-bridge" target="_blank" rel="noopener noreferrer">Context Bridge (MV3)</a></li>
+            <li class="footer-link-item"><a href="https://glow-berry-admin.vercel.app" target="_blank" rel="noopener noreferrer">GlowBerry Admin</a></li>
+            <li class="footer-link-item"><a href="https://github.com/grishisachdeva/synthetic-voice-detector" target="_blank" rel="noopener noreferrer">Deepfake Audio Detector</a></li>
+            <li class="footer-link-item"><a href="https://chessio-beige.vercel.app" target="_blank" rel="noopener noreferrer">Chessio Stockfish WASM</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Direct Connect</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="mailto:grishisachdeva@gmail.com">grishisachdeva@gmail.com</a></li>
+            <li class="footer-link-item"><a href="tel:+918826527495">+91 8826527495</a></li>
+            <li class="footer-link-item"><a href="https://www.linkedin.com/in/grishisachdeva/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
+            <li class="footer-link-item"><a href="https://github.com/grishisachdeva" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Grishi Sachdeva. Built with HTML, CSS &amp; JS. Designed in Wakeout Neo-Brutalist Sticker Style.</p>
+        <p style="display: flex; gap: 1rem; align-items: center;">
+          <span>Delhi, India 🇮🇳</span>
+          <span>•</span>
+          <a href="#hero" style="color: var(--color-yellow); font-weight: bold;">Back to Top ↑</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL / DIALOG (Project Deep Dive) -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">✕</button>
+
+      <span class="pill-badge" id="modal-tag" style="background: var(--color-yellow); color: var(--color-ink); margin-bottom: 0.75rem;">
+        TAG
+      </span>
+
+      <h2 id="modal-title" style="font-size: 2rem; margin-bottom: 0.75rem; color: var(--color-ink);">
+        Project Title
+      </h2>
+
+      <p id="modal-desc" style="font-size: 1.05rem; line-height: 1.6; color: var(--color-ink-muted); margin-bottom: 1.5rem;">
+        Project description goes here.
+      </p>
+
+      <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--color-ink);">Key Architectural Highlights:</h4>
+      <ul id="modal-bullets" class="timeline-bullets" style="margin-bottom: 1.75rem;">
+        <!-- Filled dynamically -->
+      </ul>
+
+      <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--color-ink);">Technologies Used:</h4>
+      <div id="modal-tech" class="project-tech-pills" style="margin-bottom: 2rem;">
+        <!-- Filled dynamically -->
+      </div>
+
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a id="modal-live-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-sticker btn-lime">
+          🚀 Open Live Build
+        </a>
+        <a id="modal-github-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-sticker btn-paper">
+          🐙 View GitHub Repository
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

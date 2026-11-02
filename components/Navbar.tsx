@@ -70,6 +70,15 @@ export const Navbar: React.FC<NavbarProps> = ({ soundEnabled, onToggleSound }) =
           <a href="#arcade" className="nav-link" onClick={() => setMobileOpen(false)}>
             Arcade
           </a>
+          <a
+            href="https://drive.google.com/file/d/1EZjAboGyWFoupXcEUmrR8NEzGJBYI2VR/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-link"
+            onClick={() => setMobileOpen(false)}
+          >
+            Resume ↗
+          </a>
         </nav>
 
         <div className="nav-actions">
@@ -84,6 +93,15 @@ export const Navbar: React.FC<NavbarProps> = ({ soundEnabled, onToggleSound }) =
           >
             {soundEnabled ? '🔔 Sound ON' : '🔕 Sound OFF'}
           </button>
+          <a
+            href="https://drive.google.com/file/d/1EZjAboGyWFoupXcEUmrR8NEzGJBYI2VR/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-sticker btn-yellow btn-sm"
+            title="View Resume in Google Drive"
+          >
+            📄 Resume
+          </a>
           <a
             href="https://github.com/grishisachdeva"
             target="_blank"
@@ -114,4 +132,3 @@ export const Navbar: React.FC<NavbarProps> = ({ soundEnabled, onToggleSound }) =
     </header>
   );
 };
-
